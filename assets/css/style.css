@@ -1,0 +1,80 @@
+body {
+   padding: 0%;
+   margin: 0%; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+}
+
+/* CARD */
+
+.card {
+    width: 300px;
+    height: 550px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0.2rem 0.3rem 1rem black;
+    background-color: rgb(41, 156, 41);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.laptop_imagen {
+    width: 300px;
+    height: 300px;
+}
+
+input, select {
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    height: 1.5rem;
+}
+
+
+#selector_colores {
+    width: 175px;
+    height: 1.7rem;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+
+.result {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.cambio_color {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 3rem;
+}
+
+.colores_items {
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    border: solid 1px black;
+}
+
+/* BOTON */
+
+.boton_calcular_total {
+    border-radius: 10px;
+    height: 40px;
+}
+
+.texto_boton {
+    margin: 0%;
+}
+
+/* SEGUNDA SECCION  */
+
+.segunda_section {
+    font-family: Arial, Helvetica, sans-serif;
+}
+

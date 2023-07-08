@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Calculadora Laptop</title>
+</head>
+<body>
+    <div class="card">
+        <img class="laptop_imagen" src="./assets/imgs/msi.png" alt="laptop">
+        <h2>Laptop Gamer MSI</h2>
+        <input type= "number" min="1" id="cantidad1" class="cantidadclase" placeholder="Cantidad" />
+        <select name="Color" id="selector_colores">
+            <option>Color</option>
+            <option value="red">Rojo</option>
+            <option value="green">Verde</option>
+            <option value="black">Negro</option>
+            <option value="blue">Azul</option>
+            <option value="yellow">Amarillo</option>
+        </select>
+        <p class="precio">Precio: $ 200.000</p>
+        <div class="boton_calcular_total">
+        <button class="boton_calcular_total" onclick="
+                let selector_colores = document.querySelector('#selector_colores')
+                let colores_items = document.querySelector('.colores_items')
+                colores_items.style.backgroundColor = selector_colores.value
+
+                let cantidad = document.querySelector('#cantidad1')
+                let total_items = document.querySelector('#total_items')
+                total_items.innerHTML = cantidad.value
+
+                let total_precio = document.querySelector('#total_precio')
+                let resultado = cantidad.value * 200000
+                total_precio.innerHTML = resultado
+            ">
+            <h2 class="texto_boton">Calcular Total</h2>
+        </button>
+        </div>
+    </div>
+    <section class="segunda_section">
+        <p>Total: $ <span id="total_precio">0</span></p>
+        <p>Cantidad: <span id="total_items">0</span></p>
+    <div class="cambio_color">
+        <p>Color: </p>
+        <div class="colores_items"></div>
+    </div>
+    </section>
+</body>
+</html>
